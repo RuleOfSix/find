@@ -19,7 +19,8 @@ const DependentParametricCollection = require('find/app/model/dependent-parametr
 const NONE_COLUMN = 'defaultColumn';
 
 module.exports = DependentParametricCollection.extend({
-        parse: function (data) {
+        parse: function (response) {
+            const data = response.fields;
             this.columnNames = _.chain(data)
                 // take all the field arrays
                 .pluck('subFields')
