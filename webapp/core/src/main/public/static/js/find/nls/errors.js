@@ -12,10 +12,10 @@
  * information contained herein is subject to change without notice.
  */
 
-const selectLocale = require('find/nls/select-locale');
+const selectLocale = require('js-whatever/js/select-locale');
 
 // Locales resolve at build time. To add one, create the directory and add a line here.
 module.exports = selectLocale({
-    root: require('find/nls/root/errors'),
-    'en-gb': require('find/nls/en-gb/errors')
+    root: function() { return require('find/nls/root/errors'); },
+    'en-gb': function() { return require('find/nls/en-gb/errors'); }
 });
