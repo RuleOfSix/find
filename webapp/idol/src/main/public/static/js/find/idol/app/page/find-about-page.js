@@ -32,7 +32,6 @@ module.exports = AboutPage.extend({
                     fossVersion: i18n['about.lib.version'],
                     library: i18n['about.lib.name'],
                     license: i18n['about.lib.licence'],
-                    search: i18n['about.search'],
                     title: i18n['app.about'],
                     version: i18n['about.app.version'],
                     versionString: i18n['about.versionString'](config.version, config.commit)

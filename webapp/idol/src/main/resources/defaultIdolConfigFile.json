@@ -183,11 +183,11 @@
     "maxNumberOfBuckets": 100
   },
   "themeTracker": {
-    "enabled": true,
+    "enabled": false,
     "category": {
       "protocol": "HTTP",
-      "host": "10.2.21.236",
-      "port": 19120,
+      "host": "localhost",
+      "port": 9020,
       "productType": [
         "CLASSSERVER",
         "DAH",
@@ -196,7 +196,7 @@
     },
     "databaseNames": ["News"],
     "minScore": 50,
-    "jobName": "BLACK_MDN_EVERYTHING_SG"
+    "jobName": "CATEGORIES"
   },
   "export": {
     "powerpoint": {
