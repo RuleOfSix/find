@@ -93,7 +93,6 @@ module.exports = Backbone.View.extend({
                     cancelClass: 'btn-white',
                     cancelIcon: '',
                     cancelText: i18n['app.cancel'],
-                    hiddenEvent: 'hidden.bs.modal',
                     message: i18n['customizations.delete.message'](file),
                     okText: i18n['app.button.delete'],
                     okClass: 'btn-danger',

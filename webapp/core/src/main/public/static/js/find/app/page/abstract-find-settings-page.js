@@ -140,7 +140,6 @@ module.exports = SettingsPage.extend({
                 okIcon: 'hp-icon hp-fw hp-reset',
                 message: this.strings.cancelMessage,
                 title: this.strings.cancelTitle,
-                hiddenEvent: 'hidden.bs.modal',
                 okHandler: _.bind(function() {
                     this.loadFromConfig();
                 }, this)

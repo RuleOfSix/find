@@ -158,7 +158,6 @@ module.exports = Backbone.View.extend({
                     okIcon: '',
                     message: i18n['search.savedSearches.confirm.deleteMessage'](this.savedSearchModel.get('title')),
                     title: i18n['search.savedSearches.confirm.deleteMessage.title'],
-                    hiddenEvent: 'hidden.bs.modal',
                     okHandler: _.bind(function() {
                         this.model.set({error: null, loading: true});
 
@@ -189,7 +188,6 @@ module.exports = Backbone.View.extend({
                     okIcon: '',
                     message: i18n['search.savedSearches.confirm.resetMessage'](this.savedSearchModel.get('title')),
                     title: i18n['search.savedSearches.confirm.resetMessage.title'],
-                    hiddenEvent: 'hidden.bs.modal',
                     okHandler: _.bind(function() {
                         this.resetQueryState();
                     }, this)
