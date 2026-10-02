@@ -48,10 +48,11 @@ module.exports = {
             let title = model.get('title');
 
             // Heuristic: if the title already looks like it has a file extension, return it as-is.
+            const fileExtensionRegex = /[a-zA-z0-9]{1,5}/;
             let title_split = title.split('.');
             if (
               title_split.length > 1 &&
-              title_split[title_split.length - 1].length > 0
+              fileExtensionRegex.test(title_split[title_split.length - 1])
             ) {
               return title;
             }
